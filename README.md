@@ -27,7 +27,7 @@ Content-Disposition: attachment; filename="filename.jpg"
 ```
 
 ```js
-var fileSaver = JsFileSaver(options)
+var fileSaver = new JsFileSaver(options)
 ```
 
 ## npm
@@ -40,18 +40,18 @@ npm install --save js-file-saver
 ```js
 import JsFileSaver from 'js-file-saver';
 
-const fileSaver = JsFileSaver(options);
+const fileSaver = new JsFileSaver(options);
 ```
 
 # API 说明文档
 
-* [构造函数 constructor()](README.md#constructor())
+* [构造函数 JsFileSaver()](README.md#JsFileSaver())
 * [下载（保存）文件 saver()](README.md#saver())
 * [异常处理/兼容下载（保存）文件 saverCompatible()](README.md#saverCompatible())
 
 
 # 构造函数
-# constructor()
+# JsFileSaver()
 ### Arguments
 
  - options **{Object}** 下载设置
@@ -62,10 +62,10 @@ const fileSaver = JsFileSaver(options);
 
 ### Example
 ```js
-import DL from 'js-file-saver';
+import JsFileSaver from 'js-file-saver';
 
 // 生成实例（这里的参数设置主要是为了在用户环境不支持 Blob，Promise 等情况下的兼容下载）
-const downloadBook = new DL({
+const downloadBook = new JsFileSaver({
   // 下载接口地址：'/api/downloadBook' 或 'http://localhost:3001/downloadBook'
   action: '/api/downloadBook', 
   // 下载接口类型：'get' | 'post'。默认为：'post'
