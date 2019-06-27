@@ -18,7 +18,9 @@ Content-Disposition: attachment; filename="filename.jpg"
 ## browser
 （仅下载至本地后使用，不能直接作为 CDN 资源引用）
 
-[unzipped](https://raw.githubusercontent.com/alex86gbk/js-file-saver/master/src/index.js) [(~zipped)](https://raw.githubusercontent.com/alex86gbk/js-file-saver/master/dist/js-url-helper.js)
+[unzipped](https://raw.githubusercontent.com/alex86gbk/js-file-saver/master/src/index.js)
+ 
+[(~zipped)](https://raw.githubusercontent.com/alex86gbk/js-file-saver/master/dist/js-file-saver.js)
 
 ```html
 <script src="js-file-saver.js"></script>
